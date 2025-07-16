@@ -1,0 +1,55 @@
+<!--? Load static -->
+{% load static %}
+
+<!--? Base HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+
+    <!--? Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512‑..." crossorigin="anonymous"/>
+
+    <!--! |------------CSS The Django way------------| -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <!--? Navbar -->
+    <div class="navbar">
+        <div class="main-nav-section">
+            <div class="logo">
+                <h2><a href="{% url 'home' %}">Isai.M</a></h2>
+            </div>
+            
+            
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <a href="{% url 'home'%}">About Me</a>
+            <a href="{% url 'project_list'%}">Projects</a>
+            <a href="{% url 'experience'%}">Experience</a>
+            <a href="{% url 'contact'%}">Contact</a>
+        </ul>
+    </div>
+
+    <!--? Content -->
+    {% block content %} {% endblock content %}
+
+    <!--? Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Isai M. Almeraz Landeros. All rights reserved.</p>
+            <p>Built with passion and modern web technologies.</p>
+        </div>
+    </footer>
+
+    <!--? Js Files -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

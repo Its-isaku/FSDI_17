@@ -1,0 +1,86 @@
+<!--? Extend from Base.html -->
+{% extends "base.html" %}
+
+<!--? Load static -->
+{% load static %}
+
+<!--? Title -->
+{% block title %}Home{% endblock title %}
+
+<!--? Content -->
+{% block content %}
+    <div class="main-body" id="main-body">
+        <div class="img-section">
+            <img src="{% static 'img/self_foto.jpg' %}" alt="Isai's Image">
+        </div>
+
+        <div class="info-section">
+            <h2>Software engineer with a passion for creating innovative solutions.</h2>
+            <h3>Isai .M Almeraz Landeros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt esse asperiores consequuntur provident excepturi saepe, aliquid tempora voluptates aspernatur laboriosam debitis, quod possimus quam in assumenda quasi cum, impedit ducimus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt esse asperiores consequuntur provident excepturi saepe, aliquid tempora voluptates aspernatur laboriosam debitis, quod possimus quam in assumenda quasi cum, impedit ducimus!</p>
+        </div>
+    </div>
+    
+    <!--* My skils -->
+    <div class="skills-section">
+        <h2> My Skills</h2>
+
+        <div class="Skills-items">
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <h3>Django</h3>
+            </div>
+
+            <div class="skill-item">
+                <i class="fas fa-flask"></i>
+                <h3>Flask</h3>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fas fa-users"></i>
+                <h3>Scrum</h3>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git/Github</h3>
+            </div>
+            
+            <div class="skill-item">
+                <i class="fab fa-figma"></i>
+                <h3>Figma</h3>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
